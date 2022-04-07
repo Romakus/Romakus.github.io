@@ -9,7 +9,12 @@
         color: #210042;
         font-size: 2em;
     }
-</style>ggg
+</style>
+<script src="js/clock.js"></script>
+<script>
+    window.onload = function(){
+    setInterval(clockPainting, 1000);}
+</script>
         <script type="text/javascript">
             function send()
             {
@@ -50,7 +55,8 @@
         </tr>
         <tr>
             <td width="30%" valign="top">
-
+                <center><canvas id="canvas" height="120" width="120"></canvas></center>
+                <hr>
                 <font size="5" color="navy"><h2>Новини</h2></font>
                 <font size="5">
                    <ul>
