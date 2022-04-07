@@ -9,7 +9,28 @@
         color: #210042;
         font-size: 2em;
     }
-</style>
+</style>ggg
+        <script type="text/javascript">
+            function send()
+            {
+                var valid = true;
+                var elems = document.forms[0].elements;
+                for(var i=0; i < document.forms[0].length; i++){
+                    if( elems[i].getAttribute('type') == 'text' ||
+                    elems[i].getAttribute('type') == 'password' ||
+                    elems[i].getAttribute('type') == 'email') {
+                           if(elems[i].value == '') {
+                               elems[i].style.border = '2px solid red';
+                               valid = false;
+                           }
+                       }
+                }
+                if(!valid) {
+                    alert('Заповніть всі поля !!!');
+                    return false;
+                }
+            }
+        </script>
 </head>
 <body background="images/bg.jpg">
     <table border="1" align="center" cellpading="10">
@@ -71,6 +92,7 @@
                     <hr>
             </td>
             <td width="70%">
+<P>Зробити сайт з нами легко</P>
 <P><H2>Зробити сайт з нами легко</H2></P>
 <P>Створення власного сайту - це не тільки прерогатива великого бізнесу. Інтернет відкриває широкі можливості в першу чергу для малого бізнесу, для приватної підприємницької ініціативи. Адже, при започаткуванні власної справи розробка сайту потребує зовсім невеликих інвестицій, у порівнянні з іншими видами витрат. Створити сайт, в більшості випадків - це значно дешевше, наприклад, ніж оренда офісу, чи витрати на зарплату працівників.</P>
 <P>Якщо Вам потрібно якісно створити сайт, який максимально буде відповідати своєму призначенню, то Ви завітали за вірною адресою!</P>
